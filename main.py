@@ -14,10 +14,17 @@ def main() -> None:
 
             if user_input.isnumeric():
                 base: int = int(user_input)
+            else:
+                print('Please enter a valid base...')
+                continue
 
             user_input = input('Enter the exponent: ')
+
             if user_input.isnumeric():
                 exp: int = int(user_input)
+            else:
+                print('Please enter a valid exponent...')
+                continue
 
             print(pow(base, exp))
 
